@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /admin
+
+Sitemap: https://digital-gemini-suite.lovable.app/sitemap.xml

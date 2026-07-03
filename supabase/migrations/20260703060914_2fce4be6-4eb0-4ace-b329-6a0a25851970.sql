@@ -1,0 +1,1 @@
+UPDATE public.site_content SET value_image_url = '/__l5e/assets-v1/28e8feb6-ebf0-4590-9984-a002bb12a423/truvion-logo-v2.png', value_text = '/__l5e/assets-v1/28e8feb6-ebf0-4590-9984-a002bb12a423/truvion-logo-v2.png' WHERE section = 'branding' AND key = 'logo_url';

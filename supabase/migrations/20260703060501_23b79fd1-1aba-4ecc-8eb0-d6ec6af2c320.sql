@@ -1,0 +1,4 @@
+UPDATE public.site_content SET value_image_url = '/__l5e/assets-v1/772d19c8-58d8-4e1c-b088-4e40f03b71f6/truvion-logo.jpeg', value_text = '/__l5e/assets-v1/772d19c8-58d8-4e1c-b088-4e40f03b71f6/truvion-logo.jpeg' WHERE section = 'branding' AND key = 'logo_url';
+INSERT INTO public.site_content (section, key, label, input_type, value_text, value_image_url, sort_order)
+SELECT 'branding','logo_url','Logo Image','image','/__l5e/assets-v1/772d19c8-58d8-4e1c-b088-4e40f03b71f6/truvion-logo.jpeg','/__l5e/assets-v1/772d19c8-58d8-4e1c-b088-4e40f03b71f6/truvion-logo.jpeg',1
+WHERE NOT EXISTS (SELECT 1 FROM public.site_content WHERE section='branding' AND key='logo_url');
